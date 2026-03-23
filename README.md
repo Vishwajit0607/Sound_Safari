@@ -148,45 +148,7 @@ Sound_Safari/
 
 ---
 
-## Execution Plan (Milestones)
 
-### Milestone 1: Setup
-
-* Project idea finalized
-* API selected
-* GitHub repo created
-* README added
-
-### Milestone 2: API Integration
-
-* Fetch data using API
-* Display songs dynamically
-* Add loading state
-
-### Milestone 3: Core Features
-
-* Implement search, filter, sort
-* Add interactivity (audio player, UI updates)
-
-### Milestone 4: Finalization
-
-* Clean code and refactor
-* Update documentation
-* Deploy project
-
----
-
-## Error Handling
-
-* Handles API failures gracefully
-* Displays fallback UI when data is unavailable
-* Skips songs without preview/audio
-
-```js
-if (!song.previewUrl) {
-  // Hide or disable play button
-}
-```
 
 ---
 
