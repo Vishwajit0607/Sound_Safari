@@ -13,11 +13,18 @@
 
   <header class="site-header">
     <div class="header-inner">
-      <div class="logo">
-        <span class="logo-icon">&#9654;</span>
-        <span class="logo-text">Sound Safari</span>
+    <div style="display:flex; align-items:center; gap: 16px;">
+      <button id="back-btn" class="back-btn disabled" disabled title="Go Back">&#8592; Back</button>
+      <button id="home-btn" class="home-btn" title="Go Home">🏠 Home</button>
+      <div class="logo-wrap" style="display:flex; align-items:center;">
+        <div class="logo">
+          <span class="logo-icon">&#9654;</span>
+          <span class="logo-text">Sound Safari</span>
+        </div>
+        <p class="tagline">Discover your next obsession</p>
       </div>
-      <p class="tagline">Discover your next obsession</p>
+    </div>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark/Light Mode" title="Toggle Theme">☀️</button>
     </div>
     <div class="header-stripe"></div>
   </header>
@@ -31,7 +38,20 @@
 
     <section id="app" class="app-section hidden">
 
-      <div class="stats-bar">
+      <div class="controls-bar">
+        <div class="controls-wrap">
+          <input type="text" id="search-input" class="control-input" placeholder="Search tracks or artists..." />
+          <select id="genre-filter" class="control-select">
+            <option value="all">All Genres</option>
+          </select>
+          <select id="sort-select" class="control-select">
+            <option value="default">Default Order</option>
+            <option value="title-asc">Title (A-Z)</option>
+            <option value="title-desc">Title (Z-A)</option>
+            <option value="artist-asc">Artist (A-Z)</option>
+          </select>
+          <button id="fav-toggle" class="control-btn toggle-fav-btn">❤️ Show Favorites</button>
+        </div>
         <span id="song-count" class="song-count"></span>
       </div>
 
